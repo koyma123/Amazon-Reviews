@@ -2,7 +2,7 @@ import os
 import random
 
 # Define the path to the Amazon reviews dataset
-dataset_folder = r'C:\Users\koyma khan\Downloads\Amazon Reviews python.py'
+dataset_folder = r'C:\Users\PC\Downloads\Amazon Reviews\processed_acl'
 
 # Categories in the dataset (folders within the main directory)
 categories = ["books", "dvd", "electronics", "kitchen"]
@@ -37,7 +37,7 @@ for category in categories:
 final_text = "\n\n".join(segmented_reviews)
 
 # Define the output path for the segmented file
-output_path = r'C:\Users\koyma khan\Downloads\amazon_segmented_reviews.txt'
+output_path = r'C:\Users\PC\Downloads\Amazon Reviews\amazon_segmented_reviews.txt'
 with open(output_path, "w", encoding="utf-8") as output_file:
     output_file.write(final_text)
 
